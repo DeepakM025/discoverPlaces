@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Roboto-Regular";
+
+  src: url("../fonts/Roboto-Regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/Roboto-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Medium";
+
+  src: url("../fonts/Roboto-Medium.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/Roboto-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+
+  src: url("../fonts/Roboto-Bold.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/Roboto-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Black";
+
+  src: url("../fonts/Roboto-Black.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/Roboto-Black.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Light";
+
+  src: url("../fonts/Roboto-Light.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/Roboto-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sacramento-Regular";
+
+  src: url("../fonts/Sacramento-Regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/Sacramento-Regular.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+$norml_font : "Roboto-Regular";
+$light_font : "Roboto-Light";
+$bold_font : "Roboto-Bold";
+$extra_bold_font : "Roboto-Black";
+$special_font: "Sacramento";
+
+$theme_black : #1d1d1d;
+$white: #ffffff;
+$primary_theme: #ff5851;
+$light_grey: #d6d6d6;
+$grey : #8d8d8d;
+$tag_grey : #7d7d7d;
+
+body {
+  font-family: $norml_font !important;
+  background-color: $theme_black;
+  color: $white;
+}
+
+// navbar
+.nav_bar{
+  .nav_brand:hover{
+    text-decoration: none !important;
+  }
+  .nav_brand_wrap p{
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+// navbar
+
+// body
+.mainBody{
+  margin: 4rem auto;
+  h2{
+    font-size: 2.4rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: tag_grey;
+  }
+  input{
+    display: block;
+    margin: 1rem auto;
+    width: 22rem;
+    padding: .6rem .8rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    letter-spacing: .08rem;
+    outline: none;
+    text-transform: uppercase;
+  }
+  button{
+    border: none;
+    background-color: $primary_theme;
+    color: $white;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    padding: .4rem .8rem;
+    text-transform: uppercase;
+    border-radius: .2rem;
+  }
+}
+.errorFlag{
+  margin: 3rem 0;
+  p{
+    font-size: 1.4rem;
+    color: $primary_theme;
+    margin-bottom: 0;
+    font-family: $light_font;
+    b{
+      text-transform: uppercase;
+      font-family: $norml_font;
+    }
+  }
+}
+.daysWeatherWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  .dayWeatherWrap{
+    padding: 1rem .6rem;
+    width: 16.6%;
+    margin: 0 .5rem;
+    &:first-child{
+      border: .4rem solid $primary_theme;
+    }
+    border: .2rem solid $white;
+    border-radius: .5rem;
+    h4{
+      font-size: 1rem;
+      font-family: "Roboto-Medium";
+      text-transform: uppercase;
+      margin-bottom: .6rem;
+    }
+    h3{
+      margin-bottom: .5rem;
+      font-size: 2rem;
+    }
+    p{
+      margin: 0;
+      font-size: .8rem;
+      font-family: "Roboto";
+      text-transform: uppercase;
+    }
+  }
+}
+// body

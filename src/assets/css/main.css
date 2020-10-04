@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Sacramento-Regular";
+  src: url("../fonts/Sacramento-Regular.woff") format("woff"), url("../fonts/Sacramento-Regular.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "Roboto-Regular" !important;
+  background-color: #1d1d1d;
+  color: #ffffff; }
+
+.nav_bar .nav_brand:hover {
+  text-decoration: none !important; }
+
+.nav_bar .nav_brand_wrap p {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 14px;
+  margin: 0; }
+
+.nav_bar ul {
+  display: flex;
+  list-style: none;
+  margin: 0; }
+  .nav_bar ul li {
+    margin-right: 25px; }
+    .nav_bar ul li:last-child {
+      margin-right: 0; }
+    .nav_bar ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      padding-bottom: 5px;
+      text-transform: uppercase; }
+      .nav_bar ul li a.btn_email {
+        background-color: #ff5851;
+        padding: 4px 14px;
+        border-radius: 30px; }
+    .nav_bar ul li.active {
+      color: #ff5851;
+      font-family: "Roboto-Regular"; }
+
+.color_primary {
+  color: #ff5851; }
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1500;
+    stroke-width: 1; }
+  70% {
+    stroke-width: 1; }
+  80% {
+    stroke-width: 1; }
+  90% {
+    stroke-width: 1; }
+  100% {
+    stroke-width: 1; } }
+
+@-moz-keyframes dash {
+  0% {
+    stroke-dashoffset: 1500;
+    stroke-width: 1; }
+  70% {
+    stroke-width: 1; }
+  80% {
+    stroke-width: 1; }
+  90% {
+    stroke-width: 1; }
+  100% {
+    stroke-width: 1; } }
+
+@-ms-keyframes dash {
+  0% {
+    stroke-dashoffset: 1500;
+    stroke-width: 1; }
+  70% {
+    stroke-width: 1; }
+  80% {
+    stroke-width: 1; }
+  90% {
+    stroke-width: 1; }
+  100% {
+    stroke-width: 1; } }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1500;
+    stroke-width: 1; }
+  70% {
+    stroke-width: 1; }
+  80% {
+    stroke-width: 1; }
+  90% {
+    stroke-width: 1; }
+  100% {
+    stroke-width: 1; } }
+
+.main_page_banner {
+  height: calc(100vh - 90px); }
+  .main_page_banner h1 {
+    font-family: "Roboto-Black";
+    font-size: 5rem;
+    text-align: left;
+    display: inline-table;
+    line-height: 5rem;
+    margin: 0;
+    letter-spacing: 0.2rem;
+    cursor: default; }
+  .main_page_banner h2 {
+    font-family: "Roboto-Bold";
+    font-size: 3rem;
+    text-align: left;
+    display: inline-table;
+    color: #ff5851;
+    margin: 0;
+    letter-spacing: 0.2rem;
+    cursor: default; }
+  .main_page_banner h6 {
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    color: #d6d6d6;
+    font-family: "Roboto-Light"; }
+  .main_page_banner p {
+    color: #8d8d8d;
+    font-size: 14px;
+    letter-spacing: 0.2rem;
+    margin: 0; }
+  .main_page_banner .tags {
+    color: #7d7d7d;
+    font-family: "Sacramento";
+    font-size: 22px; }
+    .main_page_banner .tags.top_tag {
+      position: fixed;
+      top: 20%; }
+    .main_page_banner .tags.bottom_tag {
+      position: fixed;
+      bottom: 10%; }
+  .main_page_banner .code_svg {
+    stroke-dasharray: 1500;
+    -webkit-animation: dash 9s linear forwards;
+    -moz-animation: dash 9s linear forwards;
+    animation: dash 9s linear forwards infinite;
+    animation-delay: 1s; }
+    .main_page_banner .code_svg polyline {
+      stroke: transparent; }
+
+.social_media_wrap {
+  position: fixed;
+  right: 0;
+  top: 25%;
+  border-radius: 5px 0 0 5px; }
+  .social_media_wrap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .social_media_wrap ul li {
+      padding: 8px;
+      background-color: #dedede;
+      position: absolute;
+      width: 120px;
+      right: -82px;
+      top: 0;
+      transition: 0.5s ease-in-out; }
+      .social_media_wrap ul li a {
+        text-decoration: none; }
+        .social_media_wrap ul li a span {
+          font-size: 14px;
+          color: #181818;
+          text-decoration: none;
+          padding-left: 6px; }
+      .social_media_wrap ul li:hover {
+        right: 0; }
+      .social_media_wrap ul li:nth-child(2) {
+        top: 41px; }
+      .social_media_wrap ul li:last-child {
+        top: 82px; }
+      .social_media_wrap ul li:hover svg {
+        fill: #ff5851; }
