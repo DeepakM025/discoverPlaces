@@ -27,7 +27,7 @@ class home extends Component {
   handleSubmit = e => {
     e.preventDefault();
     if(this.state.city){
-      axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&appid=${API_KEY}`)
+      axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&appid=${API_KEY}`)
       .then(res => {
         var uniqueDay = [];
         var nextFiveDays = [];
