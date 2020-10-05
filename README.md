@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<<<<<<< HEAD
 I am retrieving data from the oepnsource api that is  "api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}" for the forcast data of the perticular city.
 And i am calculating the average of all the forcast of the day and showing it as the temperature of the day in Celcius.
 
@@ -48,6 +49,10 @@ npm install ---> npm start
 This UI (HTML or Styles) is not copied and Javscript return or calculation logic is as per my understanding please let me know if i am wrong here.
 Thank you for the oppurtunity
 
+=======
+Live demo - https://sleepy-chamber-13522.herokuapp.com/
+
+>>>>>>> b600bc7b72fa71655e76052d9e35ba7e3d9af001
 ## Available Scripts
 
 In the project directory, you can run:
