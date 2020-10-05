@@ -1,58 +1,54 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<<<<<<< HEAD
 I am retrieving data from the oepnsource api that is  "api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}" for the forcast data of the perticular city.
 And i am calculating the average of all the forcast of the day and showing it as the temperature of the day in Celcius.
 
 Live demo - https://sleepy-chamber-13522.herokuapp.com/
 
-<!-- Steps taken -->
 
-<!-- Step 1 -->
+Step 1 -
 Created React app using create-react-app command
 
-<!-- Step 2 -->
+Step 2 -
 Installed required packages for the project for my comforts like eslint, bootstrap, axios and sass
 
-<!-- Step 3 -->
+Step 3 - 
 Completed UI with required setup of form and weather display boxes
 
-<!-- Step 4 -->
+Step 4 -
 Retrieved data from the api using axios did all the calculations 
 
-<!-- Step 5 -->
+Step 5 -
 Iterated the mapped and final data and showing the UI with dynamic data.
 
-<!-- Step 6 -->
+Step 6 -
 Handled error state and other states
 
-<!-- Step 7 -->
+Step 7 -
 Setup of heroku and git pushed the code for both of them.
 
-<!-- Common components -->
+Common components -
 error.js
 header.js
 weatherDay.js
 
-<!-- Pages -->
+Pages -
 home.js
 
-<!-- TO RUN IN LOCAL -->
+TO RUN IN LOCAL -
 npm install ---> npm start
 
-<!-- Actual behavior -->
+Actual behavior -
 - Enter the city name in the form input and click on the button "Get Weather Report"
 - Result should show with current day and next 5 days weather
 - If city not found error message should show below the button
 
-<!-- Acknowledgement -->
+Acknowledgement -
 This UI (HTML or Styles) is not copied and Javscript return or calculation logic is as per my understanding please let me know if i am wrong here.
 Thank you for the oppurtunity
 
-=======
 Live demo - https://sleepy-chamber-13522.herokuapp.com/
 
->>>>>>> b600bc7b72fa71655e76052d9e35ba7e3d9af001
 ## Available Scripts
 
 In the project directory, you can run:
