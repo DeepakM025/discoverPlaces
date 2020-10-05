@@ -21,7 +21,9 @@ class home extends Component {
     e.preventDefault();
     this.setState({
       city: e.target.value,
-      errorFlag : false
+      errorFlag : false,
+      weatherData: "",
+      mappedData: [],
     })
   }
   handleSubmit = e => {
@@ -29,16 +31,16 @@ class home extends Component {
     if(this.state.city){
       axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&appid=${API_KEY}`)
       .then(res => {
-        var uniqueDay = [];
-        var nextFiveDays = [];
-        var avgTemp = [];
-        var finalTemp = [];
+        let uniqueDay = [];
+        let nextFiveDays = [];
+        let avgTemp = [];
+        let finalTemp = [];
         this.setState({
           weatherData: res.data,
           errorFlag : false
         })
         res.data.list.forEach(element => {
-          var elementObj = {};
+          let elementObj = {};
           elementObj["date"] = element.dt;
           elementObj["temp"] = Math.round(element.main.temp - parseInt(273.15));
           elementObj["day"] = moment.unix(element.dt).format('dddd, MMM D');
@@ -50,15 +52,15 @@ class home extends Component {
         })
 
         for (let index = 0; index < nextFiveDays.length; index++) {
-          var obj = uniqueDay.filter(o => o.day === nextFiveDays[index]);
+          let obj = uniqueDay.filter(o => o.day === nextFiveDays[index]);
           avgTemp.push(obj);
         }
 
         for (let index = 0; index < avgTemp.length; index++) {
-          var newObj = {};
-          var temp = 0;
-          var date;
-          var desc;
+          let newObj = {};
+          let temp = 0;
+          let date;
+          let desc;
           avgTemp[index].forEach(elem => {
             temp = temp + elem.temp;
             date = elem.day;
@@ -98,15 +100,15 @@ class home extends Component {
           <button onClick={this.handleSubmit}>Get Weather Report</button>
         </form>
         {
-          this.state.errorFlag ? 
-             <ErrorMsg city={this.state.city} /> : ""
+          this.state.errorFlag &&
+             <ErrorMsg city={this.state.city} /> 
         }
         <div className="daysWeatherWrapper">
           {
-            this.state.weatherData ?
+            this.state.weatherData &&
               this.state.mappedData.map((dayweather, i) => {
                 return <WeatherDay dayweather={dayweather} key={i}  />
-              }) : ""
+              })
           }
         </div>
       </div>
