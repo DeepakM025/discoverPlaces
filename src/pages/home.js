@@ -86,7 +86,8 @@ class home extends Component {
     }else{
       this.setState({
         mappedData: [],
-        weatherData: ""
+        weatherData: "",
+        errorFlag : true
       })
     }
     
@@ -96,8 +97,8 @@ class home extends Component {
       <div className="container mainBody text-center">
         <h2>Weather Report</h2>
         <form>
-          <input type="search" placeholder="Enter City..." onChange={this.handleChange} />
-          <button onClick={this.handleSubmit}>Get Weather Report</button>
+          <input type="search" data-testid="city-input" placeholder="Enter City..." onChange={this.handleChange} />
+          <button onClick={this.handleSubmit} data-testid="get-weather-report">Get Weather Report</button>
         </form>
         {
           this.state.errorFlag &&

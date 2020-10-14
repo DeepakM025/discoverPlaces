@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Get weather report empty input 1`] = `
+<div
+  className="container mainBody text-center"
+>
+  <h2>
+    Weather Report
+  </h2>
+  <form>
+    <input
+      data-testid="city-input"
+      onChange={[Function]}
+      placeholder="Enter City..."
+      type="search"
+    />
+    <button
+      data-testid="get-weather-report"
+      onClick={[Function]}
+    >
+      Get Weather Report
+    </button>
+  </form>
+  <div
+    className="daysWeatherWrapper"
+  >
+    
+  </div>
+</div>
+`;

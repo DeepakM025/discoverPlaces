@@ -13,7 +13,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-test-renderer": "^16.13.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,7 +38,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
     "eslint": "^7.10.0",
-    "eslint-plugin-react": "^7.21.2"
+    "eslint-plugin-react": "^7.21.2",
+    "jest": "^26.5.3"
   }
 }
