@@ -38,6 +38,9 @@ home.js
 TO RUN IN LOCAL -
 npm install ---> npm start
 
+TO RUN TEST - 
+npm test
+
 Actual behavior -
 - Enter the city name in the form input and click on the button "Get Weather Report"
 - Result should show with current day and next 5 days weather
