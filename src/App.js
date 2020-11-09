@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <Sidebar /> */}
         <Route exact path="/" component={Home} />
       </BrowserRouter>
     </div>
