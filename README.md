@@ -1,7 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Live demo - 
-
 TO RUN IN LOCAL -
 npm install ---> npm start
 
